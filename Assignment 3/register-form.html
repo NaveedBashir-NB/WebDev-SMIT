@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+    <a href="index.html"><img src="images/previous.png" alt="back" width="5%"></a>
+    <center>
+        <form action="thankyou.html">
+            <img src="images/logo.png" alt="SMIT Logo" width="20%">
+            <h2>STUDENT REGISTRATION FORM</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td style="width: 25%;">
+                            FIRST NAME
+                        </td>
+                        <td style="width:75%;">
+                            <input type="text" placeholder="Enter your First Name" maxlength="30" required> (max 30 characters
+                            a-z
+                            and A-Z)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            LAST NAME
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Enter your Last Name" maxlength="30" required> (max 30 characters a-z
+                            and A-Z)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DATE OF BIRTH</td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>EMAIL ID</td>
+                        <td><input type="email" placeholder="Enter your Email Address"></td>
+                    </tr>
+                    <tr>
+                        <td>MOBILE</td>
+                        <td><input type="number" placeholder="Enter your Mobile Number" maxlength="11"> (11 Digits Numbers)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>GENDER</td>
+                        <td><label for="male">Male </label><input type="radio" name="gender" value="male">
+                            &nbsp;&nbsp;&nbsp;<label for="female">Female </label><input type="radio" name="gender"
+                                value="female"></td>
+                    </tr>
+                    <tr>
+                        <td>ADDRESS</td>
+                        <td><textarea name="address" rows="5" cols="50"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>CITY</td>
+                        <td><input type="text" placeholder="Enter your City Name" maxlength="30"> (max 30 characters a-z
+                            and
+                            A-Z)</td>
+                    </tr>
+                    <tr>
+                        <td>POSTAL CODE</td>
+                        <td><input type="number" placeholder="Enter Postal Code" maxlength="6"> (6 Digits Numbers)</td>
+                    </tr>
+                    <tr>
+                        <td>STATE</td>
+                        <td><input type="text" placeholder="Enter State Name" maxlength="30"> (max 30 characters a-z and
+                            A-Z)</td>
+                    </tr>
+                    <tr>
+                        <td>COUNTRY</td>
+                        <td><input type="text" placeholder="Enter your Country Name"></td>
+                    </tr>
+                    <tr>
+                        <td>HOBBIES</td>
+                        <td><label for="drawing">Drawing</label> <input type="checkbox" name="drawing" value="drawing">
+                            <label for="singing">Singing</label> <input type="checkbox" name="singing" value="singing">
+                            <label for="Dancing">Dancing</label> <input type="checkbox" name="Dancing" value="Dancing">
+                            <label for="Sketching">Sketching</label> <input type="checkbox" name="Sketching"
+                                value="Sketching">
+                            <label for="Others">Others</label> <input type="checkbox" name="Others" value="Others">
+                            <input type="text" name="Others">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>QUALIFICATION</td>
+                        <td>
+                            <table id="qualification-table">
+                                <tbody>
+                                    <tr>
+                                        <th style="width: 50px;">Sr #</th>
+                                        <th>Examination</th>
+                                        <th>Board</th>
+                                        <th>Percentage</th>
+                                        <th>Year of Passing</th>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">1</td>
+                                        <td>Class X</td>
+                                        <td><input type="text"></td>
+                                        <td><input size="15" type="text"></td>
+                                        <td><input type="month" maxlength="4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">2</td>
+                                        <td>Class XII</td>
+                                        <td><input type="text"></td>
+                                        <td><input size="15" type="text"></td>
+                                        <td><input type="month" maxlength="4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">3</td>
+                                        <td>Graduation</td>
+                                        <td><input type="text"></td>
+                                        <td><input size="15" type="text"></td>
+                                        <td><input type="month" maxlength="4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">4</td>
+                                        <td>Masters</td>
+                                        <td><input type="text"></td>
+                                        <td><input size="15" type="text"></td>
+                                        <td><input type="month" maxlength="4"></td>
+                                    </tr>
+                                    <tr style="text-align: center;">
+                                        <td></td>
+                                        <td>
+                                        <td>(10 char max)</td>
+                                        <td>upto 2 decimal</td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+            </tr>
+            <tr>
+                <td>COURSES APPLIED FOR</td>
+                <td><select name="courses">
+                        <option>Select any course</option>
+                        <option value="bba">BBA</option>
+                        <option value="ba">B.A</option>
+                        <option value="bsc">B.Sc</option>
+                        <option value="bcom">B.Com</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><br>Upload your Photo <br>(only png, jpg, jpeg formats allowed)</td>
+                <td><input type="file" accept="png jpg jpeg"></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="2"><input type="submit"> <input type="reset"></td>
+            </tr>
+            </tbody>
+            </table>
+        </form>
+    </center>
+    <!-- Footer -->
+    <br><br><br>
+    <footer style="position: fixed; bottom: 0; width: 100%; background-color: white;">
+        <hr>
+        <div
+            style="display: flex; justify-content: space-around; align-items: center; font-size: small; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgb(160, 80, 4); background-color: rgb(228, 241, 155);">
+            <div>Assignment 3</div>
+            <div>|</div>
+            <div>Submitted By</div>
+            <div>|</div>
+            <div>Naveed Bashir</div>
+            <div>|</div>
+            <div>Roll No. 345355</div>
+            <div>|</div>
+            <div>Web & Mobile App Development</div>
+            <div>|</div>
+            <div>SMIT - Batch: 15</div>
+        </div><hr>
+    </footer>
+</body>
+
+</html>
